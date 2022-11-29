@@ -1,5 +1,10 @@
 {
     "files.associations": {
         "scenes.h": "c"
+    },
+    // The following will hide the js and map files in the editor
+    "files.exclude": {
+        "**/*.o": true,
+        "**/*.map": true
     }
 }
