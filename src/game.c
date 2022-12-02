@@ -1,3 +1,5 @@
+#include <std_utils.h>
+
 #include "dusk.h"
 #include "scenes.h"
 #include "tonc_mgba.h"
@@ -19,12 +21,22 @@ BackgroundPoint shift;
 const int MOVEMENT_SPEED = 1;
 
 void logColliderLocations(){
-    mgba_log("LOGGING COLLIDER LOCATIONS", LOG_ERR);
+    mgba_log("LOGGING COLLIDER LOCATIONS", LOG_INFO);
+
+    char xString[15];
+    char yString[15];
 
     for (int i = 0; i < map.numObjects; i++){
         MapObject obj = map.objects[i];
 
-        mgba_log("x: " + obj.position.x, LOG_ERR);
+        
+        itoa_simple(xString, obj.position.x);
+        itoa_simple(yString, obj.position.y);
+
+        mgba_log("X", LOG_INFO);
+        mgba_log(xString, LOG_INFO);
+        mgba_log("Y", LOG_INFO);
+        mgba_log(yString, LOG_INFO);
     }
 }
 
@@ -41,8 +53,7 @@ bool pointInRect( int x1, int y1,
 
 void game_start(){
     //test log
-    mgba_log("LOGGING START", LOG_ERR);
-    mgba_log("unfortunately all logs show as errors even if not, LOG_INFO doesn't work", LOG_ERR);
+    mgba_log("LOGGING START", LOG_INFO);
 
     //init vars
     shift = (BackgroundPoint){0, 0};
