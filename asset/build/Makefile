@@ -54,7 +54,7 @@ $(ATLS_PNG): $(ATLS_OUT)
 	@true
 
 # rule for building tmx maps
-%.bin: ../map/%.tmx
+%.bin: ./map/%.tmx
 	Tiled2GBA -b $< $@
 
 # rule for building raw maps

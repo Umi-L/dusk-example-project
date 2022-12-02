@@ -1,39 +1,39 @@
 Archive member included to satisfy reference by file (symbol)
 
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
                               src/logo.o (dusk_load_atlas)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
                               src/logo.o (dusk_sprites_init)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
                               src/main.o (dusk_init_all)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
                               src/game.o (map_init_registers)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o) (find_first_gbfs_file)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o) (map_load_from_rom)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o) (map_load_object)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o) (map_load_object_id)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o) (map_load_object_position)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o) (map_load_string)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o) (map_pop_value)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o) (find_first_gbfs_file)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o) (map_load_from_rom)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o) (map_load_object)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o) (map_load_object_id)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o) (map_load_object_position)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o) (map_load_string)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o) (map_pop_value)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
                               src/game.o (map_set_onscreen)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
                               src/game.o (map_shift)
-/home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o) (map_shift_layer)
+/home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o) (map_shift_layer)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_color.o)
                               src/logo.o (pal_gradient_ex)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_irq.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o) (irq_init)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o) (irq_init)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_oam.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o) (oam_init)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o) (oam_init)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_input.o)
                               src/main.o (key_poll)
 /opt/devkitpro/libtonc/lib/libtonc.a(tte_init_chr4c.o)
@@ -45,9 +45,9 @@ Archive member included to satisfy reference by file (symbol)
 /opt/devkitpro/libtonc/lib/libtonc.a(tte_iohook.o)
                               src/logo.o (tte_init_con)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_bios.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o) (VBlankIntrWait)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o) (VBlankIntrWait)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_memcpy.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o) (memcpy32)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o) (memcpy32)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_bios_ex.o)
                               /opt/devkitpro/libtonc/lib/libtonc.a(tte_main.o) (VBlankIntrDelay)
 /opt/devkitpro/libtonc/lib/libtonc.a(div_lut.o)
@@ -57,7 +57,7 @@ Archive member included to satisfy reference by file (symbol)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_isr_master.o)
                               /opt/devkitpro/libtonc/lib/libtonc.a(tonc_irq.o) (isr_master)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_memset.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o) (memset32)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o) (memset32)
 /opt/devkitpro/libtonc/lib/libtonc.a(verdana9.o)
                               /opt/devkitpro/libtonc/lib/libtonc.a(tte_init_chr4c.o) (verdana9Font)
 /opt/devkitpro/libtonc/lib/libtonc.a(sys8.o)
@@ -67,15 +67,15 @@ Archive member included to satisfy reference by file (symbol)
 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_surface.o)
                               /opt/devkitpro/libtonc/lib/libtonc.a(tte_init_chr4c.o) (srf_init)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/thumb/libgcc.a(_udivsi3.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o) (__aeabi_uidivmod)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o) (__aeabi_uidivmod)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/thumb/libgcc.a(_divsi3.o)
                               src/logo.o (__aeabi_idiv)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/thumb/libgcc.a(_dvmd_tls.o)
                               /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/thumb/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-assert.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o) (__assert_func)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o) (__assert_func)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-bsearch.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o) (bsearch)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o) (bsearch)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-ctype_.o)
                               /opt/devkitpro/libtonc/lib/libtonc.a(tte_main.o) (_ctype_)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-fiprintf.o)
@@ -85,11 +85,11 @@ Archive member included to satisfy reference by file (symbol)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-iprintf.o)
                               src/logo.o (iprintf)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-malloc.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o) (malloc)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o) (malloc)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-mallocr.o)
                               /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-malloc.o) (_malloc_r)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-memcmp.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o) (memcmp)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o) (memcmp)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-memcpy-stub.o)
                               src/tonc_mgba.o (memcpy)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-memset.o)
@@ -103,13 +103,13 @@ Archive member included to satisfy reference by file (symbol)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-stdio.o)
                               /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-siscanf.o) (__seofread)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-stpcpy.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o) (stpcpy)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o) (stpcpy)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-strlen-stub.o)
                               src/tonc_mgba.o (strlen)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-strncmp.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o) (strncmp)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o) (strncmp)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-strncpy.o)
-                              /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o) (strncpy)
+                              /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o) (strncpy)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-strtol.o)
                               /opt/devkitpro/libtonc/lib/libtonc.a(tte_main.o) (strtol)
 /opt/devkitpro/devkitARM/bin/../lib/gcc/arm-none-eabi/12.2.0/../../../../arm-none-eabi/lib/thumb/libc.a(lib_a-svfiscanf.o)
@@ -277,30 +277,30 @@ Discarded input sections
  .text          0x0000000000000000        0x0 src/main.o
  .data          0x0000000000000000        0x0 src/main.o
  .bss           0x0000000000000000        0x0 src/main.o
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
- .data          0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
- .bss           0x0000000000000000        0x0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
+ .data          0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
+ .bss           0x0000000000000000        0x0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
  .data          0x0000000000000000        0x0 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_color.o)
  .bss           0x0000000000000000        0x0 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_color.o)
  .data          0x0000000000000000        0x0 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_irq.o)
@@ -874,7 +874,7 @@ Linker script and memory map
                 0x000000000800091c                pointInRect
  .text.startup  0x0000000008000970       0x1c src/main.o
                 0x0000000008000970                main
- .text          0x000000000800098c      0x330 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+ .text          0x000000000800098c      0x330 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
                 0x000000000800098c                dusk_load_init
                 0x00000000080009a8                dusk_load_raw
                 0x00000000080009c4                dusk_load_image
@@ -884,7 +884,7 @@ Linker script and memory map
                 0x0000000008000c30                dusk_load_atlas_entry
                 0x0000000008000c64                dusk_free_atlas_layout
                 0x0000000008000c7c                dusk_load_map
- .text          0x0000000008000cbc      0x528 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+ .text          0x0000000008000cbc      0x528 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
                 0x0000000008000cbc                dusk_sprites_init
                 0x0000000008000cf8                dusk_sprites_configure
                 0x0000000008000d04                dusk_sprites_upload_atlas
@@ -898,7 +898,7 @@ Linker script and memory map
                 0x0000000008001130                dusk_get_background_register
                 0x0000000008001144                dusk_background_upload_raw
                 0x0000000008001184                dusk_background_make
- .text          0x00000000080011e4      0x1b8 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+ .text          0x00000000080011e4      0x1b8 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
                 0x00000000080011e8                dusk_clear_vidmem
                 0x0000000008001220                dusk_reset_irq
                 0x0000000008001238                dusk_init_all
@@ -907,32 +907,32 @@ Linker script and memory map
                 0x0000000008001318                dusk_frame
                 0x0000000008001330                dusk_scene_set
                 0x0000000008001358                dusk_scene_update
- .text          0x000000000800139c       0x20 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
+ .text          0x000000000800139c       0x20 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
                 0x000000000800139c                map_init_registers
- .text          0x00000000080013bc      0x19c /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+ .text          0x00000000080013bc      0x19c /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
                 0x00000000080013cc                find_first_gbfs_file
                 0x0000000008001474                skip_gbfs_file
                 0x000000000800147c                gbfs_get_obj
                 0x00000000080014c4                gbfs_get_nth_obj
                 0x0000000008001504                gbfs_copy_obj
                 0x000000000800154c                gbfs_count_objs
- .text          0x0000000008001558      0x170 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
+ .text          0x0000000008001558      0x170 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
                 0x0000000008001558                map_load_from_rom
- .text          0x00000000080016c8       0x48 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
+ .text          0x00000000080016c8       0x48 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
                 0x00000000080016c8                map_load_object
- .text          0x0000000008001710       0x20 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
+ .text          0x0000000008001710       0x20 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
                 0x0000000008001710                map_load_object_id
- .text          0x0000000008001730       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
+ .text          0x0000000008001730       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
                 0x0000000008001730                map_load_object_position
- .text          0x0000000008001754       0x1c /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
+ .text          0x0000000008001754       0x1c /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
                 0x0000000008001754                map_load_string
- .text          0x0000000008001770        0xc /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
+ .text          0x0000000008001770        0xc /home/julian/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
                 0x0000000008001770                map_pop_value
- .text          0x000000000800177c       0xf0 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
+ .text          0x000000000800177c       0xf0 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
                 0x000000000800177c                map_set_onscreen
- .text          0x000000000800186c       0x38 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
+ .text          0x000000000800186c       0x38 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
                 0x000000000800186c                map_shift
- .text          0x00000000080018a4       0x10 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
+ .text          0x00000000080018a4       0x10 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
                 0x00000000080018a4                map_shift_layer
  .text          0x00000000080018b4      0x5c8 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_color.o)
                 0x00000000080018b4                clr_rotate
@@ -1379,9 +1379,9 @@ Linker script and memory map
 
 .rodata         0x000000000800b014     0x8a18
  *(.rodata)
- .rodata        0x000000000800b014       0x17 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+ .rodata        0x000000000800b014       0x17 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
  *fill*         0x000000000800b02b        0x1 ff
- .rodata        0x000000000800b02c       0x10 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+ .rodata        0x000000000800b02c       0x10 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
  .rodata        0x000000000800b03c       0x38 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_irq.o)
  .rodata        0x000000000800b074      0x1f0 /opt/devkitpro/libtonc/lib/libtonc.a(tte_main.o)
  .rodata        0x000000000800b264      0x1b4 /opt/devkitpro/libtonc/lib/libtonc.a(tte_iohook.o)
@@ -1406,12 +1406,13 @@ Linker script and memory map
                 0x000000000800ca9c       0x45 src/game.o
  *fill*         0x000000000800cae1        0x3 ff
  .rodata.str1.4
-                0x000000000800cae4       0x70 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+                0x000000000800cae4       0x6e /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
                                          0x75 (size before relaxing)
+ *fill*         0x000000000800cb52        0x2 ff
  .rodata.str1.4
-                0x000000000800cb54       0x18 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+                0x000000000800cb54       0x18 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
  .rodata.str1.4
-                0x000000000800cb6c        0xd /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+                0x000000000800cb6c        0xd /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
  *fill*         0x000000000800cb79        0x3 ff
  .rodata.str1.4
                 0x000000000800cb7c       0x3b /opt/devkitpro/libtonc/lib/libtonc.a(tte_iohook.o)
@@ -1541,9 +1542,9 @@ Linker script and memory map
                 0x0000000003000158                aPlayerWalk
                 0x000000000300015c                shift
                 0x0000000003000160                map
- .bss           0x0000000003001188        0x4 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+ .bss           0x0000000003001188        0x4 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
                 0x0000000003001188                gbfs_dat
- .bss           0x000000000300118c        0x5 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+ .bss           0x000000000300118c        0x5 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
                 0x000000000300118c                frame_count
  *fill*         0x0000000003001191        0x1 
  .bss           0x0000000003001192        0x4 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_input.o)
@@ -1594,10 +1595,10 @@ Linker script and memory map
                 0x00000000030012c4                logo_scene
  .data          0x00000000030012d0        0xc src/game.o
                 0x00000000030012d0                game_scene
- .data          0x00000000030012dc        0x8 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+ .data          0x00000000030012dc        0x8 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
                 0x00000000030012dc                sprites_bpp8
                 0x00000000030012e0                obj_aff_buffer
- .data          0x00000000030012e4       0x1c /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+ .data          0x00000000030012e4       0x1c /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
                 0x00000000030012fc                _DUSK_LIB_VERSION
  .data          0x0000000003001300        0x8 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_input.o)
                 0x0000000003001300                __key_rpt
@@ -1733,7 +1734,7 @@ Linker script and memory map
 
 .ewram          0x0000000002000000      0x95c load address 0x0000000008015640
  *(.ewram*)
- .ewram         0x0000000002000000      0x900 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+ .ewram         0x0000000002000000      0x900 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
                 0x0000000002000000                sprites
                 0x0000000002000500                obj_buffer
  .ewram         0x0000000002000900       0x5c /opt/devkitpro/libtonc/lib/libtonc.a(tonc_nocash.o)
@@ -1786,20 +1787,20 @@ Linker script and memory map
  .comment       0x0000000000000023       0x24 src/logo.o
  .comment       0x0000000000000023       0x24 src/game.o
  .comment       0x0000000000000023       0x24 src/main.o
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
- .comment       0x0000000000000023       0x24 /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
+ .comment       0x0000000000000023       0x24 /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
  .comment       0x0000000000000023       0x22 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_color.o)
                                          0x23 (size before relaxing)
  .comment       0x0000000000000045       0x23 /opt/devkitpro/libtonc/lib/libtonc.a(tonc_irq.o)
@@ -1962,33 +1963,33 @@ Linker script and memory map
  .ARM.attributes
                 0x00000000000000d8       0x26 src/main.o
  .ARM.attributes
-                0x00000000000000fe       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(load.o)
+                0x00000000000000fe       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(load.o)
  .ARM.attributes
-                0x0000000000000128       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
+                0x0000000000000128       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sprites.o)
  .ARM.attributes
-                0x0000000000000152       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
+                0x0000000000000152       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(sys.o)
  .ARM.attributes
-                0x000000000000017c       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
+                0x000000000000017c       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(initMapRegisters.o)
  .ARM.attributes
-                0x00000000000001a6       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
+                0x00000000000001a6       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(libgbfs.o)
  .ARM.attributes
-                0x00000000000001d0       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
+                0x00000000000001d0       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadMapFromROM.o)
  .ARM.attributes
-                0x00000000000001fa       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
+                0x00000000000001fa       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObject.o)
  .ARM.attributes
-                0x0000000000000224       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
+                0x0000000000000224       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadObjectID.o)
  .ARM.attributes
-                0x000000000000024e       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
+                0x000000000000024e       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadPosition.o)
  .ARM.attributes
-                0x0000000000000278       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
+                0x0000000000000278       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(loadString.o)
  .ARM.attributes
-                0x00000000000002a2       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
+                0x00000000000002a2       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(popValue.o)
  .ARM.attributes
-                0x00000000000002cc       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
+                0x00000000000002cc       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(setMapOnScreen.o)
  .ARM.attributes
-                0x00000000000002f6       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
+                0x00000000000002f6       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMap.o)
  .ARM.attributes
-                0x0000000000000320       0x2a /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
+                0x0000000000000320       0x2a /home/julian/lib/dusk/src/dusk/lib/libdusk.a(shiftMapLayer.o)
  .ARM.attributes
                 0x000000000000034a       0x2a /opt/devkitpro/libtonc/lib/libtonc.a(tonc_color.o)
  .ARM.attributes
@@ -2223,7 +2224,7 @@ LOAD src/tonc_mgba.o
 LOAD src/logo.o
 LOAD src/game.o
 LOAD src/main.o
-LOAD /home/vboxuser/lib/dusk/src/dusk/lib/libdusk.a
+LOAD /home/julian/lib/dusk/src/dusk/lib/libdusk.a
 LOAD /opt/devkitpro/libtonc/lib/libtonc.a
 LOAD /opt/devkitpro/libgba/lib/libmm.a
 START GROUP
