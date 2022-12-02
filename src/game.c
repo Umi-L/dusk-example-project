@@ -52,7 +52,7 @@ bool pointInRect( int x1, int y1,
 }
 
 void game_start(){
-    //test log
+    //test logging
     mgba_log("LOGGING START", LOG_INFO);
 
     //init vars
@@ -65,7 +65,7 @@ void game_start(){
     map = dusk_load_map("testmap");
     map_init_registers();
     map_set_onscreen(map);
-
+    
     logColliderLocations();
 
     // load sprite atlas
