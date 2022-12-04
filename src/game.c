@@ -3,11 +3,10 @@
 #include "dusk.h"
 #include "scenes.h"
 #include "tonc_mgba.h"
+#include "types.h"
 
-/** virtual position */
-typedef struct VPos {
-    short x, y;
-} VPos;
+AABB colliders[50];
+int num_colliders = 0;
 
 Sprite* sPlayer;
 VPos pPlayer;
@@ -17,27 +16,57 @@ Map map;
 
 BackgroundPoint shift;
 
-
 const int MOVEMENT_SPEED = 1;
 
 void logColliderLocations(){
-    mgba_log("LOGGING COLLIDER LOCATIONS", LOG_INFO);
-
-    char xString[15];
-    char yString[15];
+    mgba_log("LOGGING COLLIDER LOCATIONS");
 
     for (int i = 0; i < map.numObjects; i++){
         MapObject obj = map.objects[i];
 
-        
-        itoa_simple(xString, obj.position.x);
-        itoa_simple(yString, obj.position.y);
+        mgba_log("X");
+        mgba_log_int(obj.position.y);
+        mgba_log("Y");
+        mgba_log_int(obj.position.y); 
 
-        mgba_log("X", LOG_INFO);
-        mgba_log(xString, LOG_INFO);
-        mgba_log("Y", LOG_INFO);
-        mgba_log(yString, LOG_INFO);
+        mgba_log(obj.name);
     }
+}
+
+void loadMapColliders(){
+    num_colliders = 0;
+
+    for (int i = 0; i < map.numObjects; i++){
+        // mgba_log_int_with_prefix("currentobj posx: ", obj.position.x);
+        // mgba_log_int_with_prefix("currentobj posy: ", obj.position.y);
+
+        // mgba_log_int_with_prefix("if 0 then even else odd: ", i % 2);
+
+        if (i % 2 == 0){ //even
+            colliders[i/2].p1 = &map.objects[i].position;
+
+            // mgba_log("even");
+        }
+        else{
+            colliders[i/2].p2 = &map.objects[i].position;
+            num_colliders++;
+
+            mgba_log_int_with_prefix("\n\nLoaded collider#: ", i/2);
+            mgba_log_int_with_prefix("p1 x: ", colliders[i/2].p1->x);
+            mgba_log_int_with_prefix("p1 y: ", colliders[i/2].p1->y);
+            mgba_log_int_with_prefix("p2 x: ", colliders[i/2].p2->x);
+            mgba_log_int_with_prefix("p2 y: ", colliders[i/2].p2->y);
+        }
+
+        
+    }
+}
+
+void logPlayerLocation(){
+    mgba_log("\nPlayerPos");
+
+    mgba_log_int_with_prefix("Player x: ", sPlayer->x);
+    mgba_log_int_with_prefix("Player y: ", sPlayer->y);
 }
 
 bool pointInRect( int x1, int y1, 
@@ -47,13 +76,13 @@ bool pointInRect( int x1, int y1,
 {
     if (px > x1 && px < x2 && py > y1 && py < y2)
         return true;
- 
+
     return false;
 }
 
 void game_start(){
     //test logging
-    mgba_log("LOGGING START", LOG_INFO);
+    mgba_log("LOGGING START");
 
     //init vars
     shift = (BackgroundPoint){0, 0};
@@ -65,8 +94,9 @@ void game_start(){
     map = dusk_load_map("testmap");
     map_init_registers();
     map_set_onscreen(map);
-    
+
     logColliderLocations();
+    loadMapColliders();
 
     // load sprite atlas
     dusk_sprites_init();
@@ -98,24 +128,32 @@ void game_update(){
     int y_move = key_tri_vert();
     int x_move = key_tri_horz();
 
+    VPos pPossiblePosition = pPlayer;
+
     //update player position
-    pPlayer.x += x_move * MOVEMENT_SPEED;
-    pPlayer.y += y_move * MOVEMENT_SPEED;
+    pPossiblePosition.x += x_move * MOVEMENT_SPEED;
+    pPossiblePosition.y += y_move * MOVEMENT_SPEED;
 
     bool validPosition = true;
 
     //collision
-    for (int i = 0; i < map.numObjects; i++){
-        MapObject obj = map.objects[i];
+    for (int i = 0; i < num_colliders; i++){
+        //mgba_log_int(i);
 
-        if (obj.position.x == pPlayer.x && obj.position.y == pPlayer.y){
-            pPlayer.x = 50;
+        AABB obj = colliders[i];
+
+        //mgba_log_int(colliders[i].p2->y);
+
+        if(pointInRect(obj.p1->x, obj.p1->y, obj.p2->x, obj.p2->y, pPossiblePosition.x, pPossiblePosition.y)){
+            validPosition = false;
         }
 
-        //if(pointInRect())
+        //logPlayerLocation();
     }
 
     if (validPosition){
+
+        pPlayer = pPossiblePosition;
 
         //push to sprite
         sPlayer->x = pPlayer.x;

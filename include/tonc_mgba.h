@@ -5,6 +5,7 @@
 //! \author Nick Sells
 //! \date 20210221
 
+#pragma once
 #ifndef TONC_MGBA_H
 #define TONC_MGBA_H
 
@@ -19,6 +20,15 @@
 #define LOG_WARN        0x102
 #define LOG_INFO        0x103
 
-void mgba_log(const char* str, const u32 level);
+
+void mgba_log(const char* str);
+
+void mgba_log_type(const char* str, const u32 level);
+
+void mgba_log_int(int num);
+
+void mgba_log_int_type(int num, const u32 level);
+
+void mgba_log_int_with_prefix(const char* prefix, int num);
 
 #endif

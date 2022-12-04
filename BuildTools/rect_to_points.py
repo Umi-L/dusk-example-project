@@ -12,6 +12,9 @@ OUTPUT_DIR = os.getcwd() + "/asset/build/map"
 copiedDirs = []
 
 def replacePoints():
+    objectCount = 0;
+
+
     #get all .tmx files
     files = [y for x in os.walk(os.getcwd()) for y in glob(os.path.join(x[0], '*.tmx'))]
 
@@ -34,7 +37,7 @@ def replacePoints():
 
         fileDir = file.split(filename)[0]
 
-        #get tsx from tmx
+        #Copy tsx and source images
         tilesets = root.findall("tileset")
 
         for tileset in tilesets:
@@ -42,7 +45,23 @@ def replacePoints():
 
             dir = fileDir + source
 
-            tileset.set("source", dir)
+            tilesetTree = ET.parse(dir)
+            tilesetRoot = tilesetTree.getroot()
+
+            images = tilesetRoot.findall("image")
+
+            for image in images:
+                try:
+                    shutil.copy(fileDir + image.get("source"), OUTPUT_DIR)
+                except shutil.SameFileError:
+                    print("file already exists: " + fileDir + image.get("source"))
+
+            try:
+                shutil.copy(dir, OUTPUT_DIR)
+            except shutil.SameFileError:
+                print("file already exists: " + dir)
+
+
 
             
         #output
@@ -73,10 +92,18 @@ def replacePoints():
                     point2.set("x", str(float(object.get("x")) + float(object.get("width"))))
                     point2.set("y", str(float(object.get("y")) + float(object.get("height"))))
 
+                    ET.SubElement(point1, "point")
+                    ET.SubElement(point2, "point")
+
+                    point1.set("name", str(objectCount) + "x1")
+                    point2.set("name", str(objectCount) + "x2")
+
                     group.append(point1)
                     group.append(point2)
 
                     group.remove(object)
+
+                    objectCount += 1
 
 
     

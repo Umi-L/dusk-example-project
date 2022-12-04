@@ -63,6 +63,7 @@ libs:
 	cd $(DUSK_DIR) && make $(DUSK_MKFLAGS)
 
 assets:
+	python3 BuildTools/build.py
 	cd asset/build && make $(ASSET_MKFLAGS)
 
 $(NAME).gba : $(NAME)-code.gba $(NAME).gbfs

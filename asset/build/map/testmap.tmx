@@ -1,4 +1,4 @@
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="70">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="85">
  <tileset firstgid="1" source="platformertiles.tsx" />
  <layer id="1" name="Tile Layer 1" width="32" height="32">
   <data encoding="csv">
@@ -37,5 +37,5 @@
 </data>
  </layer>
  <objectgroup id="2" name="colliders">
-  <object x="0" y="64" /><object x="176.0" y="112.0" /></objectgroup>
+  <object x="0" y="64" name="0x1"><point /></object><object x="176.0" y="112.0" name="0x2"><point /></object><object x="128" y="112" name="1x1"><point /></object><object x="176.0" y="192.0" name="1x2"><point /></object><object x="256" y="0" name="2x1"><point /></object><object x="400.0" y="176.0" name="2x2"><point /></object><object x="400" y="160" name="3x1"><point /></object><object x="512.0" y="176.0" name="3x2"><point /></object><object x="448" y="224" name="4x1"><point /></object><object x="480.0" y="336.0" name="4x2"><point /></object><object x="320" y="304" name="5x1"><point /></object><object x="448.0" y="336.0" name="5x2"><point /></object><object x="176" y="384" name="6x1"><point /></object><object x="320.0" y="400.0" name="6x2"><point /></object><object x="16" y="288" name="7x1"><point /></object><object x="96.0" y="304.0" name="7x2"><point /></object><object x="96" y="304" name="8x1"><point /></object><object x="128.0" y="320.0" name="8x2"><point /></object><object x="160" y="240" name="9x1"><point /></object><object x="304.0" y="272.0" name="9x2"><point /></object><object x="304" y="256" name="10x1"><point /></object><object x="336.0" y="272.0" name="10x2"><point /></object></objectgroup>
 </map>
