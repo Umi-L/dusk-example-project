@@ -11,7 +11,7 @@ This was made on linux though I'm sure with some tweaking you can get it to work
 
 It has all the same requirements as [DuSK](https://github.com/bmchtech/dusk/tree/main/) as its based on it.
 
-The makefile expects there to be a ~/lib/dusk folder with the dusk repo cloned.
+The makefile expects there to be a `~/lib/dusk folder` with the dusk repo cloned.
 
 Finally just run `make` and you should get a .gba file sitting in your project folder.
 
