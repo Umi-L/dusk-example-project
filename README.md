@@ -5,7 +5,7 @@ Based on [this](https://github.com/bmchtech/dusk/tree/main/) library for drawing
 
 I'm very new to low level development (especially in C) but I figured the best way to learn is to just go for it. And I've been wanting to make some homebrew for a while now so here we are.
 
-### Compiling
+### Compiling & Running
 
 This was made on linux though I'm sure with some tweaking you can get it to work on WSL.
 
