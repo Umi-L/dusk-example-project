@@ -15,4 +15,10 @@ The makefile expects there to be a `~/lib/dusk folder` with the dusk repo cloned
 
 Finally just run `make` and you should get a .gba file sitting in your project folder.
 
+All my debug logs expect you to be running mGBA.
+
+On linux my run command is `mgba-qt dusk-example-project.gba` though on windows I think it may differ.
+
+The debug output is sent to the console when running using the command above and the "logs" section of mGBA.
+
 If there are any issues you can conact me on Discord which should be in my profile.
