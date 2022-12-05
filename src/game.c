@@ -4,6 +4,7 @@
 #include "scenes.h"
 #include "tonc_mgba.h"
 #include "types.h"
+#include "collision.h"
 
 AABB colliders[50];
 int num_colliders = 0;
@@ -11,6 +12,7 @@ int num_colliders = 0;
 Sprite* sPlayer;
 VPos pPlayer;
 Anim aPlayerWalk;
+const AABB playerColliderOffsets = {&(ObjectPoint){0,0},&(ObjectPoint){32,32}};
 
 Map map;
 
@@ -24,12 +26,12 @@ void logColliderLocations(){
     for (int i = 0; i < map.numObjects; i++){
         MapObject obj = map.objects[i];
 
-        mgba_log("X");
-        mgba_log_int(obj.position.y);
-        mgba_log("Y");
-        mgba_log_int(obj.position.y); 
+        mgba_log("\n");
 
         mgba_log(obj.name);
+
+        mgba_log_int_with_prefix("x: ", obj.position.y);
+        mgba_log_int_with_prefix("y: ", obj.position.y);
     }
 }
 
@@ -136,19 +138,24 @@ void game_update(){
 
     bool validPosition = true;
 
+    AABB playerCollider = (AABB){&(ObjectPoint){0,0},&(ObjectPoint){0,0}};
+    colliderFromOffsets(pPossiblePosition, playerColliderOffsets, &playerCollider);
+
+    mgba_log_int_with_prefix("Player p1 x: ", playerCollider.p1->x);
+    mgba_log_int_with_prefix("Player p1 y: ", playerCollider.p1->y);
+
+    mgba_log_int_with_prefix("Player p2 x: ", playerCollider.p2->x);
+    mgba_log_int_with_prefix("Player p2 y: ", playerCollider.p2->y);
+
     //collision
     for (int i = 0; i < num_colliders; i++){
         //mgba_log_int(i);
 
         AABB obj = colliders[i];
 
-        //mgba_log_int(colliders[i].p2->y);
-
-        if(pointInRect(obj.p1->x, obj.p1->y, obj.p2->x, obj.p2->y, pPossiblePosition.x, pPossiblePosition.y)){
+        if(AABBCollision(playerCollider, obj)){
             validPosition = false;
         }
-
-        //logPlayerLocation();
     }
 
     if (validPosition){
