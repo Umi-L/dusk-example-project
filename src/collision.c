@@ -31,3 +31,14 @@ void colliderFromOffsets(VPos pos, AABB offsets, AABB* dest){
     // mgba_log_int_with_prefix("infunc p2x: ", dest->p2->x);
     // mgba_log_int_with_prefix("infunc p2y: ", dest->p2->y);
 }
+
+bool pointInRect( int x1, int y1, 
+                int x2, int y2, 
+                //point
+                int px, int py)
+{
+    if (px > x1 && px < x2 && py > y1 && py < y2)
+        return true;
+
+    return false;
+}

@@ -14,6 +14,8 @@ VPos pPlayer;
 Anim aPlayerWalk;
 const AABB playerColliderOffsets = {&(ObjectPoint){0,0},&(ObjectPoint){32,32}};
 
+AABB mapBounds = {&(ObjectPoint){0,0}, &(ObjectPoint){256, 256}}; 
+
 Map map;
 
 BackgroundPoint shift;
@@ -71,15 +73,39 @@ void logPlayerLocation(){
     mgba_log_int_with_prefix("Player y: ", sPlayer->y);
 }
 
-bool pointInRect( int x1, int y1, 
-                int x2, int y2, 
-                //point
-                int px, int py)
-{
-    if (px > x1 && px < x2 && py > y1 && py < y2)
-        return true;
+/** update background and sprite from pos */
+void adjust_background_to_sprite(VPos pos, Sprite *sprite) {
+    shift.x = pPlayer.x;
+    shift.y = pPlayer.y;
 
-    return false;
+
+    //offset to middle
+    shift.x -= SCREEN_WIDTH/2 - 16;
+    shift.y -= SCREEN_HEIGHT/2 - 16;
+
+    //min bounds
+    if (shift.x < mapBounds.p1->x){
+        shift.x = mapBounds.p1->x;
+    }
+    if (shift.y < mapBounds.p1->y){
+        shift.y = mapBounds.p1->y;
+    }
+
+
+    //max bounds
+    if (shift.x > mapBounds.p2->x){
+        shift.x = mapBounds.p2->x;
+    }
+    if (shift.y > mapBounds.p2->y){
+        shift.y = mapBounds.p2->y;
+    }
+
+
+    sPlayer->x = (SCREEN_WIDTH/2 - 16) - ((shift.x + SCREEN_WIDTH/2 - 16) - pPlayer.x);
+    sPlayer->y = (SCREEN_HEIGHT/2 - 16) - ((shift.y + SCREEN_HEIGHT/2 - 16) - pPlayer.y);
+
+
+    map_shift(map, shift);
 }
 
 void game_start(){
@@ -141,17 +167,13 @@ void game_update(){
     AABB playerCollider = (AABB){&(ObjectPoint){0,0},&(ObjectPoint){0,0}};
     colliderFromOffsets(pPossiblePosition, playerColliderOffsets, &playerCollider);
 
-    mgba_log_int_with_prefix("Player p1 x: ", playerCollider.p1->x);
-    mgba_log_int_with_prefix("Player p1 y: ", playerCollider.p1->y);
-
-    mgba_log_int_with_prefix("Player p2 x: ", playerCollider.p2->x);
-    mgba_log_int_with_prefix("Player p2 y: ", playerCollider.p2->y);
-
     //collision
     for (int i = 0; i < num_colliders; i++){
         //mgba_log_int(i);
 
         AABB obj = colliders[i];
+
+        logPlayerLocation();
 
         if(AABBCollision(playerCollider, obj)){
             validPosition = false;
@@ -159,19 +181,13 @@ void game_update(){
     }
 
     if (validPosition){
-
         pPlayer = pPossiblePosition;
 
-        //push to sprite
-        sPlayer->x = pPlayer.x;
-        sPlayer->y = pPlayer.y;
+        adjust_background_to_sprite(pPlayer, sPlayer);
     }
 
     //animate sprite
     dusk_sprites_anim_play(sPlayer, &aPlayerWalk);
-
-    // update map position
-    map_shift(map, shift);
 
     //blit sprite data from vram
     dusk_sprites_update();
