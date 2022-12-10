@@ -20,7 +20,7 @@ Map map;
 
 BackgroundPoint shift;
 
-const int MOVEMENT_SPEED = 1;
+const float MOVEMENT_SPEED = 3;
 
 void logColliderLocations(){
     mgba_log("LOGGING COLLIDER LOCATIONS");
@@ -148,43 +148,77 @@ void game_start(){
     aPlayerWalk = MAKE_ANIM(0, 2);
 }
 
-void game_update(){
-    dusk_frame();
-
-
-    // input
-    int y_move = key_tri_vert();
-    int x_move = key_tri_horz();
-
+void playerMovement(int xAxis, int yAxis){
     VPos pPossiblePosition = pPlayer;
 
-    //update player position
-    pPossiblePosition.x += x_move * MOVEMENT_SPEED;
-    pPossiblePosition.y += y_move * MOVEMENT_SPEED;
+    short xMovement = xAxis * MOVEMENT_SPEED;
+    short yMovement = yAxis * MOVEMENT_SPEED;
 
-    bool validPosition = true;
+    VPos xPossiblePosition = pPossiblePosition;
+    xPossiblePosition.x += xMovement;
+
+    VPos yPossiblePosition = pPossiblePosition;
+    yPossiblePosition.y += yMovement;
 
     AABB playerCollider = (AABB){&(ObjectPoint){0,0},&(ObjectPoint){0,0}};
+    AABB playerColliderX = (AABB){&(ObjectPoint){0,0},&(ObjectPoint){0,0}};
+    AABB playerColliderY = (AABB){&(ObjectPoint){0,0},&(ObjectPoint){0,0}};
+
+    pPossiblePosition.x += xMovement;
+    pPossiblePosition.y += yMovement;
+
+    //make colliders
+    colliderFromOffsets(xPossiblePosition, playerColliderOffsets, &playerColliderX);
+    colliderFromOffsets(yPossiblePosition, playerColliderOffsets, &playerColliderY);
     colliderFromOffsets(pPossiblePosition, playerColliderOffsets, &playerCollider);
 
     //collision
+    bool xValidPosition = true;
+    bool yValidPosition = true;
+
+    bool validPosition = true;
     for (int i = 0; i < num_colliders; i++){
         //mgba_log_int(i);
 
         AABB obj = colliders[i];
 
-        logPlayerLocation();
+        //logPlayerLocation();
 
-        if(AABBCollision(playerCollider, obj)){
+        if (AABBCollision(playerCollider, obj)){
             validPosition = false;
+
+            if (AABBCollision(playerColliderX, obj)){
+                xValidPosition = false;
+            }
+            if (AABBCollision(playerColliderY, obj)){
+                yValidPosition = false;
+            }
         }
     }
 
     if (validPosition){
         pPlayer = pPossiblePosition;
-
         adjust_background_to_sprite(pPlayer, sPlayer);
     }
+    else if (xValidPosition){
+        pPlayer = xPossiblePosition;
+        adjust_background_to_sprite(pPlayer, sPlayer);
+    }
+    else if (yValidPosition){
+        pPlayer = yPossiblePosition;
+        adjust_background_to_sprite(pPlayer, sPlayer);
+    }
+}
+
+void game_update(){
+    dusk_frame();
+
+    // input
+    int yAxis = key_tri_vert();
+    int xAxis = key_tri_horz();
+
+    //player movement
+    playerMovement(xAxis, yAxis);
 
     //animate sprite
     dusk_sprites_anim_play(sPlayer, &aPlayerWalk);
